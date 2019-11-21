@@ -1,36 +1,196 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
+
+<head>
+    <title>HomeWorks</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-      <section>
-          <div class="gooey">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-      </section>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        window.addEventListener('load', ()=>{
-            $(".gooey span").draggable();
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="container">
+            <div class="text-center" id="titlePage">
+                <h1>Coding Mission</h1>
+                <p>Daily work to get better at coding</p>
+            </div>
+
+            <section>
+                <nav class="mb-3 navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse justify-content-around navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav menu-nav">
+                        <li class="nav-item active">
+                            <button id="1" data-toggle="modal" data-target="#content1">Command Linux</button>
+                        </li>
+                        <li class="nav-item d-none">
+                            <button id="2">Do not click</button>
+                        </li>
+                        <li class="nav-item d-none">
+                            <button id="3">Do not click</button>
+                        </li>
+                        <li class="nav-item d-none">
+                            <button id="4" data-toggle="modal" data-target="#content4">Modal 2</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </section>
+
+            <div class="text-center">
+                <h2>Mission</h2>
+            </div>
+
+            <div class="shadow">
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>Link</th>
+                        <th>Explanation</th>
+                    </tr>
+                    <div class="colonne">
+                        <tr>
+                            <td>1</td>
+                            <td><a target="_blank" href="./assets/pages/01.Diary/index.html">Mission 1</a></td> 
+                            <td>Create the Diary Folder and set the first page</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a target="_blank" href="./assets/pages/02.DiaryEasyPage/index.html">Mission 2</a></td> 
+                            <td>Create a page of your Diary and set the <strong>index.html</strong> file</td> 
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a target="_blank" href="./assets/pages/03.DiaryNormalPage/index.html">Mission 3</a></td> 
+                            <td>Create another page  of your Diary and set the <strong>index.html</strong> file but with more segmentation</td> 
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a target="_blank" href="./assets/pages/04.DiaryUpdateMainPage/index.html">Mission 4</a></td> 
+                            <td>Update your Diary (easy) Home Page with your Link pages</td> 
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a target="_blank" href="./assets/pages/05.DiaryAdvancedPage/index.html">Mission 5</a></td>
+                            <td>Create a new page and you will a new level of segmentation</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Mission 6</td>
+                            <td>Let's add some color</td>
+                        </tr>
+                    </div>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="inner-header"></div>
+
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+
+    <div class="modal fade bd-example-modal-xl" id="content4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="content4CenterTitle">Something</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-boy">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-xl" id="content1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="content1CenterTitle">Commande Linux</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>
+                            <p>Start a Terminal on Debian distribution use simultaneous <strong>CTRL</strong> + <strong>ALT</strong> +
+                                <strong>T</strong></p>
+                        </li>
+                        <li>
+                            <p><strong>ls</strong> List the contents of a directory (or folder).</p>
+                        </li>
+                        <li><strong>pwd</strong> Displays the path of the current folder.</li>
+                        <li><strong>cd</strong> Allows you to walk around the folders.</li>
+                        <li><strong>mkdir</strong> Create a new directory.</li>
+                        <li><strong>touch</strong> Create a new file.</li>
+                        <li><strong>cp</strong> Copy files or directories.
+                            <ul>
+                                <li><strong>cp</strong> file1 file2 Here, copy the contents of file1 into file2.</li>
+                                <li><strong>cp</strong> folder1 / file1 folder2 Here, we copy file1 in folder2.</li>
+                                <li><strong>cp</strong> folder1 / file1 folder2 / file2 folder3 / Here, we copy file1 and file2 in folder3.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>mv</strong> Move or rename a file or folder.
+                            <ul>
+                                <li><strong>mv</strong> file1 file2 folder1 / Here, we move file1 and file2 in folder1.</li>
+                                <li><strong>mv</strong> file1 file2 Here, we rename file1 to file2.</li>
+                            </ul>
+                        </li>
+                        <li><strong>rm</strong> Delete a file.
+                            <ul>
+                                <li><strong>rmdir</strong> remove a folder.</li>
+                            </ul>
+                        </li>
+                        <li><strong>cat</strong> Displays the contents of a file.
+                            <ul>
+                                <li><strong>cat</strong> file1&gt; file2 Here, all the contents of file2 are replaced by the contents of
+                                    file1.</li>
+                                <li><strong>cat</strong> file1 &gt;&gt; file2 Here, the contents of file1 are added to the contents of
+                                    file2. | This is the &quot;pipe&quot;, it passes the output of a command inpout another command.</li>
+                                <li><strong>cat</strong> file1 | Here, the output of cat becomes the inpout of wc.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
 </html>
