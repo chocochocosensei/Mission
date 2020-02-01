@@ -101,6 +101,33 @@ th, td {
   text-transform: uppercase;
 }
 
+/* Modal */
+
+.instruction .keyWord{
+  font-weight: bold;
+  background-color: yellow;
+  color: red;
+  text-decoration: underline;
+}
+
+.command{
+  background-color: rgba(20,20,20,1);
+  color: lime;
+  padding: 5px;
+}
+.command .commandHead{
+  font-weight: bold;
+  color: darkcyan;
+}
+
+.command .commandCmd{
+  font-weight: bold;
+}
+
+.command .commandFileName{
+  color: white;
+}
+
 /* Animation */
 
 .header {

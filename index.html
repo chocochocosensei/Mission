@@ -146,47 +146,102 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <ul>
-                        <li>
-                            <p>Start a Terminal on Debian distribution use simultaneous <strong>CTRL</strong> + <strong>ALT</strong> +
-                                <strong>T</strong></p>
-                        </li>
-                        <li>
-                            <p><strong>ls</strong> List the contents of a directory (or folder).</p>
-                        </li>
-                        <li><strong>pwd</strong> Displays the path of the current folder.</li>
-                        <li><strong>cd</strong> Allows you to walk around the folders.</li>
-                        <li><strong>mkdir</strong> Create a new directory.</li>
-                        <li><strong>touch</strong> Create a new file.</li>
-                        <li><strong>cp</strong> Copy files or directories.
-                            <ul>
-                                <li><strong>cp</strong> file1 file2 Here, copy the contents of file1 into file2.</li>
-                                <li><strong>cp</strong> folder1 / file1 folder2 Here, we copy file1 in folder2.</li>
-                                <li><strong>cp</strong> folder1 / file1 folder2 / file2 folder3 / Here, we copy file1 and file2 in folder3.
-                                </li>
-                            </ul>
-                        </li>
-                        <li><strong>mv</strong> Move or rename a file or folder.
-                            <ul>
-                                <li><strong>mv</strong> file1 file2 folder1 / Here, we move file1 and file2 in folder1.</li>
-                                <li><strong>mv</strong> file1 file2 Here, we rename file1 to file2.</li>
-                            </ul>
-                        </li>
-                        <li><strong>rm</strong> Delete a file.
-                            <ul>
-                                <li><strong>rmdir</strong> remove a folder.</li>
-                            </ul>
-                        </li>
-                        <li><strong>cat</strong> Displays the contents of a file.
-                            <ul>
-                                <li><strong>cat</strong> file1&gt; file2 Here, all the contents of file2 are replaced by the contents of
-                                    file1.</li>
-                                <li><strong>cat</strong> file1 &gt;&gt; file2 Here, the contents of file1 are added to the contents of
-                                    file2. | This is the &quot;pipe&quot;, it passes the output of a command inpout another command.</li>
-                                <li><strong>cat</strong> file1 | Here, the output of cat becomes the inpout of wc.</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div class="modal-body-title text-center">
+                        <div class="text-center">
+                            <h3>Start a Terminal on Debian distribution use simultaneous <strong>CTRL</strong> + <strong>ALT</strong> + <strong>T</strong></h3>
+                        </div>
+                        <div class="text-center">
+                            <h4>If I say: </h4>
+                        </div>
+                    </div>
+                    <div class="modal-body-main">
+                        <section class="border p-2 m-1">
+                            <div class="instruction">
+                                <p>Create a <span class="keyWord">Folder</span> or a <span class="keyWord">Directory</span> called or named <strong>test</strong></p>
+                            </div>
+                            <div class="subInstruction">
+                                <small>You should be able to do...</small>
+                            </div>
+                            <div class="command">
+                                <p><span class="commandHead">root@hack:~/Desktop#</span> <span class="commandCmd">mkdir</span> <span class="commandFileName"> test</span></p>
+                            </div>
+                        </section>
+
+                        <section class="border p-2 m-1">
+                            <div class="instruction">
+                                <p>Create a <span class="keyWord">File</span> called or named <strong>ABC</strong></p>
+                            </div>
+                            <div class="subInstruction">
+                                <small>You should be able to do...</small>
+                            </div>
+                            <div class="command">
+                                <p><span class="commandHead">root@hack:~/Desktop#</span> <span class="commandCmd">touch</span> <span class="commandFileName"> ABC</span></p>
+                            </div>
+                        </section>
+
+                        <section class="border p-2 m-1">
+                            <div class="instruction">
+                                <p><span class="keyWord">List</span> or <span class="keyWord">Check</span> me the content of your folder</p>
+                            </div>
+                            <div class="subInstruction">
+                                <small>You should be able to do...</small>
+                            </div>
+                            <div class="command">
+                                <p><span class="commandHead">root@hack:~/Desktop#</span> <span class="commandCmd">ls</span></p>
+                            </div>
+                        </section>
+
+                        <section class="border p-2 m-1">
+                            <div class="instruction">
+                                <p><span class="keyWord">Go to</span> or <span class="keyWord">Go inside</span> folder <strong>XYZ</strong></p>
+                            </div>
+                            <div class="subInstruction">
+                                <small>You should be able to do...</small>
+                            </div>
+                            <div class="command">
+                                <p><span class="commandHead">root@hack:~/Desktop#</span> <span class="commandCmd">cd</span> <span class="commandFileName">XYZ</span></p>
+                            </div>
+                        </section>
+
+                        <section class="border p-2 m-1">
+                            <div class="instruction">
+                                <p><span class="keyWord">Change the name</span> or <span class="keyWord">rename</span> the <span class="keyWord">FILE</span> or the <span class="keyWord">FOLDER</span> <strong>Pikachu</strong> to <strong>Raichu</strong></p>
+                            </div>
+                            <div class="subInstruction">
+                                <small>You should be able to do...</small>
+                            </div>
+                            <div class="command">
+                                <p><span class="commandHead">root@hack:~/Desktop#</span> <span class="commandCmd">mv</span> <span class="commandFileName">Pikachu Raichu</span></p>
+                            </div>
+                            <div class="subInstruction">
+                                <small><span class="keyWord">mv</span> is use the name for <strong>File</strong> and <strong>Folder</strong></small>
+                            </div>
+                        </section>
+
+                        <section class="border p-2 m-1">
+                            <div class="instruction">
+                                <p><span class="keyWord">Delete</span> or <span class="keyWord">Remove</span> a <span class="keyWord">File</span > named <strong>ABC</strong></p>
+                            </div>
+                            <div class="subInstruction">
+                                <small>You should be able to do...</small>
+                            </div>
+                            <div class="command">
+                                <p><span class="commandHead">root@hack:~/Desktop#</span> <span class="commandCmd">rm</span> <span class="commandFileName">ABC</span></p>
+                            </div>
+                        </section>
+
+                        <section class="border p-2 m-1">
+                            <div class="instruction">
+                                <p><span class="keyWord">Delete</span> or <span class="keyWord">Remove</span> a <span class="keyWord">Folder</span > named <strong>XYZ</strong></p>
+                            </div>
+                            <div class="subInstruction">
+                                <small>You should be able to do...</small>
+                            </div>
+                            <div class="command">
+                                <p><span class="commandHead">root@hack:~/Desktop#</span> <span class="commandCmd">rmdir</span> <span class="commandFileName">XYZ</span></p>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
